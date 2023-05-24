@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardUserController;
+use App\Http\Controllers\DashboardProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,12 +17,17 @@ use App\Http\Controllers\DashboardUserController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get(
     '/user',
     [DashboardUserController::class, 'index']
+);
+
+Route::get(
+    '/product',
+    [DashboardProductController::class, 'index']
 );
 
 Route::get(
