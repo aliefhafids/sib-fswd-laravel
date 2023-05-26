@@ -34,15 +34,14 @@
             </header>
             <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
                 class="display-3 text-white font-weight-bold my-5">
-                Flutter<br>
-                Scanner App
+                Distortion<br>
+                Mobile App
 
             </h1>
             <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
                 class="lead text-white my-4">
-                Scanner Mobile App connected to database and geolocation <br>
-                can provide effectiveness in lighting
-                on security activities that are doing shifts.
+                A Mobile Application that facilitates the purchase of clothes <br>
+                available at Distortion Stores.
             </p>
             <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
                 class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a>
@@ -54,19 +53,19 @@
         <div class="row">
             <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true"
                 class="col-md-4 text-center">
-                <img src="img/smart-protect-1.jpg" alt="Anti-spam" class="mx-auto">
+                <img src="img/smart-protect-1.png" alt="Anti-spam" class="mx-auto">
                 <h4>effectiveness</h4>
                 <p>provide effectiveness for monitoring.</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true"
                 class="col-md-4 text-center">
-                <img src="img/smart-protect-2.jpg" alt="Phishing Detect" class="mx-auto">
+                <img src="img/smart-protect-2.png" alt="Phishing Detect" class="mx-auto">
                 <h4>Accurate</h4>
                 <p>The inputted time data cannot be changed</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true"
                 class="col-md-4 text-center">
-                <img src="img/smart-protect-3.jpg" alt="Smart Scan" class="mx-auto">
+                <img src="img/smart-protect-3.png" alt="Smart Scan" class="mx-auto">
                 <h4>Real time</h4>
                 <p>Display real time in monitoring</p>
             </div>
@@ -84,7 +83,7 @@
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"
                     class="col-md-6 align-self-center">
-                    <img src="img/feature-1.jpg" alt="Take a look inside" class="mx-auto d-block" style="width:300px">
+                    <img src="img/feature-1.png" alt="Take a look inside" class="mx-auto d-block" style="width:300px">
                 </div>
             </div>
         </div>
@@ -121,13 +120,8 @@
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                     <a href="#" class="d-inline-block text-center ml-2">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
-                    <a href="#" class="d-inline-block text-center ml-2">
-                        <i class="fa fa-medium" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="d-inline-block text-center ml-2">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>

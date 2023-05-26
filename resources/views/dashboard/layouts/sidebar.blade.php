@@ -33,8 +33,10 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Our Data:</h6>
-                <a class="collapse-item" href="/user">Users</a>
-                <a class="collapse-item" href="/product">Products</a>
+                <a class="collapse-item" href="/dashboard/group-user">Group Users</a>
+                <a class="collapse-item" href="/dashboard/user">Users</a>
+                <a class="collapse-item" href="/dashboard/product-categories">Category Products</a>
+                <a class="collapse-item" href="/dashboard/product">Products</a>
             </div>
         </div>
     </li>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\DashboardProductController;
+use App\Http\Controllers\DashboardCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,16 +22,14 @@ Route::get('/', function () {
 });
 
 Route::get(
-    '/user',
-    [DashboardUserController::class, 'index']
-);
-
-Route::get(
-    '/product',
-    [DashboardProductController::class, 'index']
-);
-
-Route::get(
     '/dashboard',
     [DashboardController::class, 'index']
 );
+
+Route::get(
+    '/dashboard/user',
+    [DashboardUserController::class, 'index']
+);
+
+Route::resource('/dashboard/product', DashboardProductController::class);
+Route::resource('/dashboard/product-categories', DashboardCategoryController::class);
