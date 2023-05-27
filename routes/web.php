@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardUserController;
+use App\Http\Controllers\DashboardGroupController;
 use App\Http\Controllers\DashboardProductController;
 use App\Http\Controllers\DashboardCategoryController;
 
@@ -26,10 +27,8 @@ Route::get(
     [DashboardController::class, 'index']
 );
 
-Route::get(
-    '/dashboard/user',
-    [DashboardUserController::class, 'index']
-);
 
 Route::resource('/dashboard/product', DashboardProductController::class);
 Route::resource('/dashboard/product-categories', DashboardCategoryController::class);
+Route::resource('/dashboard/group-user', DashboardGroupController::class);
+Route::resource('/dashboard/user', DashboardUserController::class);

@@ -2,13 +2,13 @@
 
 @section('content')
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Table User's</h1>
-<p class="mb-4">Table user's data stored in the database, this data can be input via the create data form.</p>
-<a href="/dashboard/user/create" class="btn btn-success btn-icon-split mb-3">
+<h1 class="h3 mb-2 text-gray-800">Table Groups User</h1>
+<p class="mb-4">Table Category data stored in the database, this data can be input via the create data form.</p>
+<a href="/dashboard/group-user/create" class="btn btn-success btn-icon-split mb-3">
     <span class="icon text-white-50">
         <i class="fas fa-plus"></i>
     </span>
-    <span class="text">Add new User</span>
+    <span class="text">Add new Data</span>
 </a>
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
@@ -22,8 +22,7 @@
                     <tr>
                         <th>#</th>
                         <th>Name</th>
-                        <th>Groups</th>
-                        <th>Email</th>
+                        <th>Code</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -31,24 +30,22 @@
                     <tr>
                         <th>#</th>
                         <th>Name</th>
-                        <th>Groups</th>
-                        <th>Email</th>
+                        <th>Code</th>
                         <th>Action</th>
                     </tr>
                 </tfoot>
                 <tbody>
-                    @foreach($users as $user)
+                    @foreach($groups as $group)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td>{{ $user->name }}</td>
-                        <td>{{ $user->group->name}}</td>
-                        <td>{{ $user->email }}</td>
+                        <td>{{ $group->name }}</td>
+                        <td>{{ $group->code }}</td>
                         <td>
-                            <a href="/dashboard/user/{{ $user->id }}" type="button"
+                            <a href="/dashboard/group-user/{{ $group->id }}" type="button"
                                 class="btn btn-outline-secondary btn-sm">show</a>
-                            <a href="/dashboard/user/{{ $user->id }}/edit" type="button"
+                            <a href="/dashboard/group-user/{{ $group->id }}/edit" type="button"
                                 class="btn btn-outline-secondary btn-sm">edit</a>
-                            <form action="/dashboard/user/{{ $user->id }}" method="post" class="d-inline">
+                            <form action="/dashboard/group-user/{{ $group->id }}" method="post" class="d-inline">
                                 @method('delete')
                                 @csrf
                                 <button class="btn btn-outline-secondary btn-sm"
