@@ -33,8 +33,6 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Our Data:</h6>
-                <a class="collapse-item" href="/dashboard/group-user">Group Users</a>
-                <a class="collapse-item" href="/dashboard/user">Users</a>
                 <a class="collapse-item" href="/dashboard/product-categories">Category Products</a>
                 <a class="collapse-item" href="/dashboard/product">Products</a>
             </div>
@@ -68,6 +66,16 @@
             <i class="fas fa-fw fa-cog"></i>
             <span>Settings</span></a>
     </li>
+
+    <form action="/logout" method="post">
+        @csrf
+        <li class="nav-item">
+            <button type="submit" class="btn-primary nav-link">
+                <i class="fas fa-fw fa-wrench"></i>
+                <span>Logout</span></button>
+            </a>
+        </li>
+    </form>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

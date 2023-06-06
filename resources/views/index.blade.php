@@ -26,10 +26,7 @@
                 <div class="row justify-content-between">
                     <div class="col-2">
                         <img src="img/logo.png" alt="logo">
-                    </div>
-                    <div class="col-6 align-self-center text-right">
-                        <a href="/dashboard" class="text-white lead">Dashboard</a>
-                    </div>
+                    </div>            
                 </div>
             </header>
             <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
